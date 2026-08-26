@@ -1,12 +1,18 @@
-# Bài 2: Kiểm tra số dương, âm hay bằng 0
+# Bài 3: Xếp loại điểm
 
 # ===== INPUT =====
-so = float(input("Nhập một số bất kỳ: "))
+diem = float(input("Nhập điểm: "))
 
 # ===== PROCESS & OUTPUT =====
-if so > 0:
-    print("Số dương")
-elif so < 0:
-    print("Số âm")
+if diem < 0 or diem > 10:
+    print("Điểm không hợp lệ")
+elif diem >= 9:
+    print("Xuất sắc")
+elif diem >= 8:
+    print("Giỏi")
+elif diem >= 6.5:
+    print("Khá")
+elif diem >= 5:
+    print("Trung bình")
 else:
-    print("Bằng 0")
+    print("Yếu")
